@@ -37,4 +37,100 @@ print(L1)
 t = ('w','e','r','t','y')
 L1 = list(t)
 print(L1)
-# 
+
+list = eval(input('Enter list to be added:'))
+print('List you have entered:',list)
+
+var1 = eval(input('enter value:'))
+print(var1,type(var1))
+
+vowels =['a','e','i','o','u']
+print(vowels[0])
+vowels[0]= 'A'
+print(vowels)
+
+L =['P','y','t','h','o','n']
+for a in L:
+    print(a)
+
+L = ['q','w','e','r','t','y']
+length= len(L)
+for a in range(length):
+    print('at indexes',a,'and',(a-length),'element:',L[a])
+    
+first = [10,12,14,20,22,24,30,32,34]
+seq = first[3:-3]
+print(seq)
+seq[1]= 28
+print(seq)
+
+first = [10,12,14,20,22,24,30,32,34]
+print(first[0:10:2])
+print(first[2:10:3])
+print(first[::3])
+
+first = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+slc1 = first[5:15:2]
+slc2 = first[::4]
+sum1 = avg = 0
+print(slc1)
+
+for a in slc1:
+    sum1 += a
+    print(a,end = '')
+print()
+print('sum of elements of slc1:',sum1)
+print(slc2)
+sum1 = 0
+for a in slc2:
+    sum1 += a
+    print(a,end = '')
+print()
+avg = sum1/len(slc2)
+print('Average of elements of slc2 :',avg)
+
+L = ['one','two','THREE']
+print(L)
+L[0:2] = [0,1]
+print(L)
+L[0:2] = 'a'
+print(L)
+
+L =[1,2,3,]
+L[10:20]= 'abcd'
+print(L)
+
+list1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+del list1[10]#11 gets deleted
+print(list1)
+
+list1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+print(list1[10])
+
+a = [1,2,3]
+b = a
+a[1] = 5
+print(a)
+print(b)
+'''
+# to not modify list as follows:
+a = [1,2,3]
+b = list(a)
+a[1] = 5
+print(a)
+print(b)
+'''
+L1 = [13,18,11,14,15]
+b = L1.index(18)
+print(b)
+
+colors = ['red','green','blue']
+b = colors.append('yellow')
+print(b)
+
+
+
+
+
+
+
