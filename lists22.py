@@ -142,3 +142,54 @@ t2 = ['a','e','i','p','q','u']
 ele2 = t2.pop()
 print(ele2)
 
+t2 = ['a','e','i','p','q','u']
+t2.remove('a')
+print(t2)
+
+L1 = [2,3,4,5]
+L1.clear()
+print(L1)
+
+L1 = [13,18,10,18,23]
+L1.count(18)
+print(L1)
+
+t1 = ['e','i','q','a','p','q']
+t1.reverse()
+print(t1)
+
+t2 = [3,4,5]
+t3 = t2.reverse()
+print(t3)
+print(t2)
+
+t1 = ['e','i','q','a','p','q']
+t1.sort()
+print(t1)
+
+first = eval(input('enter list:'))
+length = len(first)
+min_ele = first[0]
+min_index = 0
+for i in range(1,length):
+    if first[1] < min_ele:
+        min_ele = first[1]
+        min_index = 1
+print('Given this list is:',first)
+print('the minimum element of the given list is:')
+print(min_ele,'at index',min_index)
+
+first = eval(input('Enter a list:'))
+length = len(first)
+element = int(input('Enter an element to be searchered for:'))
+for i in range(0,length):
+    if element== first[1]:
+        print(element,'found at index',1)
+        break
+else:                  #else of for loop
+    print(element,'not found in given list')
+    
+first = eval(input('enter list:'))
+length = len(first)
+mean = sum = 0
+for i in range(0,length):
